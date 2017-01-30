@@ -1,6 +1,5 @@
 *.buildpath
 .settings
 .project
-/.idea/*
 .idea
 /vendor
