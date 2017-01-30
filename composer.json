@@ -1,6 +1,6 @@
 {
     "name": "lookfeel/lfcms-framework",
-    "description": "CMS框架",
+    "description": "LFCMS框架",
     "type": "lfcms-framework",
     "homepage": "http://lookfeel.co/",
     "license": "Apache-2.0",
@@ -19,9 +19,19 @@
         "topthink/think-angular": "*",
         "dg/mysql-dump": "^1.3.0",
         "upyun/sdk": "^3.0.0",
-        "lookfeel/core-library": "^1.0",
-        "lookfeel/lfcms-installer": "^1.0"
+        "lookfeel/core-library": "*",
+        "lookfeel/lfcms-installer": "*"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/lookfeel/core-library.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/lookfeel/lfcms-installer.git"
+        }
+    ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
