@@ -22,16 +22,6 @@
         "lookfeel/core-library": "*",
         "lookfeel/lfcms-installer": "*"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/lookfeel/core-library.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/lookfeel/lfcms-installer.git"
-        }
-    ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
