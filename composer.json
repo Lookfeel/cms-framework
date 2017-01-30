@@ -1,0 +1,34 @@
+{
+    "name": "lookfeel/lfcms-framework",
+    "description": "CMS框架",
+    "type": "lfcms-framework",
+    "homepage": "http://lookfeel.co/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "terranc",
+            "email": "terran.chao@lookfeel.co"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^5.0",
+        "topthink/think-captcha": "*",
+        "topthink/think-helper": "*",
+        "topthink/think-image": "*",
+        "topthink/think-queue": "*",
+        "topthink/think-angular": "*",
+        "dg/mysql-dump": "^1.3.0",
+        "upyun/sdk": "^3.0.0",
+        "lookfeel/core-library": "^1.0",
+        "lookfeel/lfcms-installer": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "lfcms\\": "library"
+        },
+        "files": [
+            "common.php"
+        ]
+    }
+}
