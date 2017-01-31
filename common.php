@@ -3,7 +3,7 @@ use think\Hook;
 use think\Loader;
 
 // 注册行为，加载模块公共函数
-Hook::add('app_init', '\\lfcms\\behavior\\LoadCommonBehavior');
+Hook::add('app_init', '\\cms\\behavior\\LoadCommonBehavior');
 
 // 注册命令空间
 if (defined('APP_PATH')) {
@@ -24,7 +24,7 @@ if (defined('APP_PATH')) {
  */
 function apiReturn($code = 1, $info = '', $data = '')
 {
-    $res = \newday\common\Format::formatResult($code, $info, $data);
+    $res = \lookfeel\common\Format::formatResult($code, $info, $data);
     responseReturn($res, 'json');
 }
 
