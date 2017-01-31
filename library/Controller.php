@@ -1,7 +1,7 @@
 <?php
-namespace lfcms;
+namespace cms;
 
-use lfcms\View;
+use cms\View;
 use think\Request;
 use lookfeel\common\Format;
 

@@ -1,5 +1,5 @@
 <?php
-namespace lfcms;
+namespace cms;
 
 abstract class Login
 {

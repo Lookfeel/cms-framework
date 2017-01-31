@@ -2,8 +2,8 @@
 namespace lfcms\upload\driver;
 
 use UpYun;
-use lfcms\Common;
-use lfcms\Upload;
+use cms\Common;
+use cms\Upload;
 use lookfeel\common\Format;
 
 class LocalUpload extends Upload

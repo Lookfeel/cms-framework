@@ -1,7 +1,7 @@
 <?php
 namespace lfcms\login\driver;
 
-use lfcms\Login;
+use cms\Login;
 use think\Cookie;
 use think\Cache;
 

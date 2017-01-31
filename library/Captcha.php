@@ -1,5 +1,5 @@
 <?php
-namespace lfcms;
+namespace cms;
 
 class Captcha
 {

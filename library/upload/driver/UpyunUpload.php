@@ -1,7 +1,7 @@
 <?php
 namespace lfcms\upload\driver;
 
-use lfcms\Upload;
+use cms\Upload;
 use Upyun\Config;
 use Upyun\Upyun;
 use Upyun\Api\Multi;

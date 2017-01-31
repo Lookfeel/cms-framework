@@ -1,7 +1,7 @@
 <?php
-namespace lfcms;
+namespace cms;
 
-use lfcms\Common;
+use cms\Common;
 use think\Image;
 use lookfeel\common\Curl;
 use lookfeel\common\Format;

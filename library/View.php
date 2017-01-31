@@ -1,5 +1,5 @@
 <?php
-namespace lfcms;
+namespace cms;
 
 use think\Config;
 use think\Request;
