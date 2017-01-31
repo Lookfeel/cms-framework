@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\behavior;
+namespace cms\behavior;
 
 class LoadCommonBehavior
 {

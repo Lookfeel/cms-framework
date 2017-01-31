@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\paginator;
+namespace cms\paginator;
 
 use think\Paginator;
 

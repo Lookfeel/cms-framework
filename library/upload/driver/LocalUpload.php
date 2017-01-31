@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\upload\driver;
+namespace cms\upload\driver;
 
 use UpYun;
 use cms\Common;

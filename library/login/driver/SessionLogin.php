@@ -1,5 +1,5 @@
 <?php
-namespace lfcms\login\driver;
+namespace cms\login\driver;
 
 use cms\Login;
 use think\Session;
