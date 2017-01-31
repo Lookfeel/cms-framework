@@ -9,7 +9,7 @@ Hook::add('app_init', '\\cms\\behavior\\LoadCommonBehavior');
 if (defined('APP_PATH')) {
     // core
     Loader::addNamespace('core', APP_PATH . 'core');
-    
+
     // module
     Loader::addNamespace('module', APP_PATH . 'module');
 }
@@ -17,9 +17,9 @@ if (defined('APP_PATH')) {
 /**
  * 接口返回
  *
- * @param number $code            
- * @param string $info            
- * @param string $data            
+ * @param number $code
+ * @param string $info
+ * @param string $data
  * @throws \think\exception\HttpResponseException
  */
 function apiReturn($code = 1, $info = '', $data = '')
@@ -31,21 +31,22 @@ function apiReturn($code = 1, $info = '', $data = '')
 /**
  * 输出结果
  *
- * @param mixed $data            
- * @param string $type            
+ * @param mixed $data
+ * @param string $type
+ * @param array $header
  * @throws \think\exception\HttpResponseException
  */
-function responseReturn($data, $type = 'auto')
+function responseReturn($data, $type = 'auto', $header = [])
 {
-    $type == 'auto' && $type = is_array($data) ? 'json' : 'text';
-    $response = \think\Response::create($data, $type);
+    $type == 'auto' && $type = is_array($data) ? \think\Config::get('default_ajax_return') : 'text';
+    $response = \think\Response::create($data, $type)->header($header);
     throw new \think\exception\HttpResponseException($response);
 }
 
 /**
  * 退出返回
  *
- * @param mixed $data            
+ * @param mixed $data
  */
 function exitReturn($data)
 {
@@ -56,9 +57,9 @@ function exitReturn($data)
 /**
  * 跳转链接
  *
- * @param string $url            
- * @param array $param            
- * @param string $need_build            
+ * @param string $url
+ * @param array $param
+ * @param string $need_build
  * @throws \think\exception\HttpResponseException
  */
 function responseRedirect($url, $param = [], $need_build = true)
@@ -69,8 +70,19 @@ function responseRedirect($url, $param = [], $need_build = true)
         $url .= strpos($url, '?') ? '&' : '?';
         $url .= http_build_query($param);
     }
-    
+
     $response = new \think\Response();
     $response->header('Location', $url);
     throw new \think\exception\HttpResponseException($response);
+}
+
+/**
+ * 打印调试
+ *
+ * @param      $data
+ * @param null $label
+ */
+function dd($data, $label = null) {
+    dump($data, true, $label);
+    exit;
 }

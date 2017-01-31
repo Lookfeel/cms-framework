@@ -16,7 +16,6 @@
         "topthink/think-helper": "*",
         "topthink/think-image": "*",
         "topthink/think-queue": "*",
-        "topthink/think-angular": "*",
         "dg/mysql-dump": "^1.3.0",
         "upyun/sdk": "^3.0.0",
         "lookfeel/core-library": "*",
