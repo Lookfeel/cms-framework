@@ -10,7 +10,7 @@ use lookfeel\file\FileInfo;
 abstract class Upload
 {
     
-    use \newday\traits\Instance;
+    use \lookfeel\traits\Instance;
 
     /**
      * 上传类型

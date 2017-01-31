@@ -34,7 +34,7 @@ use think\Db;
 abstract class Model
 {
     
-    use \newday\traits\Instance;
+    use \lookfeel\traits\Instance;
 
     /**
      * 数据库连接
