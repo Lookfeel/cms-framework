@@ -1,9 +1,9 @@
 <?php
-namespace cms;
+namespace lfcms;
 
-use cms\View;
+use lfcms\View;
 use think\Request;
-use newday\common\Format;
+use lookfeel\common\Format;
 
 class Controller
 {

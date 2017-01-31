@@ -1,11 +1,11 @@
 <?php
-namespace cms;
+namespace lfcms;
 
-use cms\Common;
+use lfcms\Common;
 use think\Image;
-use newday\common\Curl;
-use newday\common\Format;
-use newday\file\FileInfo;
+use lookfeel\common\Curl;
+use lookfeel\common\Format;
+use lookfeel\file\FileInfo;
 
 abstract class Upload
 {

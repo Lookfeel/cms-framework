@@ -1,9 +1,9 @@
 <?php
-namespace cms;
+namespace lfcms;
 
 abstract class Login
 {
-    use \newday\traits\Instance;
+    use \lookfeel\traits\Instance;
 
     /**
      * Session

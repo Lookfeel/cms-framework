@@ -1,5 +1,5 @@
 <?php
-namespace cms;
+namespace lfcms;
 
 /**
  * Logic类
@@ -9,7 +9,7 @@ namespace cms;
  */
 abstract class Logic
 {
-    use \newday\traits\Instance;
+    use \lookfeel\traits\Instance;
 
     /**
      * 模型类名
