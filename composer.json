@@ -30,7 +30,4 @@
             "common.php"
         ]
     }
-    "config": {
-        "preferred-install": "dist"
-    }
 }
