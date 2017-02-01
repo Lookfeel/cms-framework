@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "lookfeel/framework": "*",
+        "topthink/framework": "^5.0",
         "topthink/think-captcha": "*",
         "topthink/think-helper": "*",
         "topthink/think-image": "*",
@@ -21,7 +21,7 @@
         "lookfeel/core-library": "*",
         "lookfeel/lfcms-installer": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "cms\\": "library"
