@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "topthink/framework": "^5.0",
+        "lookfeel/framework": "dev-master",
         "topthink/think-captcha": "*",
         "topthink/think-helper": "*",
         "topthink/think-image": "*",
@@ -29,5 +29,8 @@
         "files": [
             "common.php"
         ]
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 }
