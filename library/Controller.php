@@ -5,6 +5,7 @@ use cms\View;
 use think\Config;
 use think\Request;
 use lookfeel\common\Format;
+use think\Url;
 
 class Controller extends \think\Controller
 {
@@ -80,7 +81,7 @@ class Controller extends \think\Controller
      * @param array $header
      * @return mixed
      */
-    protected function success($msg = '', $url = '', $data = '', $wait = 3, array $header = [])
+    protected function success($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
     {
         return $this->jump(1, $msg, $url, $data, $wait, $header);
     }
@@ -94,7 +95,7 @@ class Controller extends \think\Controller
      * @param array $header
      * @return mixed
      */
-    protected function error($msg = '', $url = '', $data = '', $wait = 3, array $header = [])
+    protected function error($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
     {
         return $this->jump(0, $msg, $url, $data, $wait, $header);
     }

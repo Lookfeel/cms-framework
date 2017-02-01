@@ -82,7 +82,7 @@ abstract class Logic
     /**
      * 获取model和validate对象
      *
-     * @param string $name            
+     * @param string $name
      * @return mixed
      */
     public function __get($name)
