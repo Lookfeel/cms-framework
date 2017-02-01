@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "lookfeel/framework": "dev-master",
+        "lookfeel/framework": "*",
         "topthink/think-captcha": "*",
         "topthink/think-helper": "*",
         "topthink/think-image": "*",
