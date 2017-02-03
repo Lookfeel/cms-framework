@@ -123,7 +123,7 @@ class Controller extends \think\Controller
      */
     public function getView()
     {
-        empty($this->view) && $this->view = new View();
+        empty($this->view) && $this->view = View::instance(Config::get('template'), Config::get('view_replace_str'));
         return $this->view;
     }
 
