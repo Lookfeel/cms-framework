@@ -22,7 +22,6 @@
         "lookfeel/core-library": "*",
         "lookfeel/lfcms-installer": "*"
     },
-    "minimum-stability": "dist",
     "autoload": {
         "psr-4": {
             "cms\\": "library"
